@@ -1,9 +1,9 @@
 {
-  "name": "ts-ros",
+  "name": "30-seconds-of-typescript",
   "version": "1.0.0",
   "description": "Typescript snippet repository",
   "license": "MIT",
-  "repository": "minidonut/ts-ros",
+  "repository": "minidonut/30-seconds-of-typescript",
   "author": {
     "name": "Karl Saehun Chung",
     "email": "saehun.dev@gmail.com"
