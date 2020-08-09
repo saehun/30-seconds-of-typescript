@@ -6,7 +6,7 @@ export const appendFileWithStream = (filePath: string, data: string): number => 
   stream.write(data);
   stream.end();
 
-  // size of byte written
+  // size of bytes written
   return Buffer.byteLength(data, 'utf8');
 };
 
@@ -39,5 +39,3 @@ export const find = (startPath: string, ignore: string | RegExp = ''): string[] 
   }
   return result;
 };
-
-console.log(find(process.cwd()));
