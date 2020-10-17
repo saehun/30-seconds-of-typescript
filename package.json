@@ -35,5 +35,9 @@
   "keywords": [
     "snippet",
     "typescript"
-  ]
+  ],
+  "dependencies": {
+    "aws-sdk": "^2.734.0",
+    "date-fns": "^2.15.0"
+  }
 }
