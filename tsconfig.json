@@ -9,6 +9,7 @@
     "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "esModuleInterop": true,
     "lib": [ "dom", "esnext" ]
   },
   "include": [
