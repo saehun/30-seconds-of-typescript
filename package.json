@@ -14,21 +14,21 @@
     "lint": "eslint . --ext .js,.ts"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.9",
-    "@types/node": "^14.0.27",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.1",
     "@types/rewire": "^2.5.28",
     "@types/tough-cookie": "^4.0.0",
-    "@types/yargs": "^15.0.5",
-    "@typescript-eslint/eslint-plugin": "^3.8.0",
-    "@typescript-eslint/parser": "^3.8.0",
-    "eslint": "^7.6.0",
-    "jest": "^26.2.2",
-    "nock": "^13.0.5",
-    "prettier": "^2.0.5",
+    "@types/yargs": "^16.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "eslint": "^7.25.0",
+    "jest": "^26.6.3",
+    "nock": "^13.0.11",
+    "prettier": "^2.2.1",
     "rewire": "^5.0.0",
-    "ts-jest": "^26.1.4",
-    "ts-node": "^8.10.2",
-    "typescript": "^3.9.7"
+    "ts-jest": "^26.5.5",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
   },
   "files": [
     "dist",
@@ -39,10 +39,10 @@
     "typescript"
   ],
   "dependencies": {
-    "aws-sdk": "^2.734.0",
+    "aws-sdk": "^2.900.0",
     "axios": "^0.21.1",
     "axios-cookiejar-support": "^1.0.1",
-    "date-fns": "^2.15.0",
+    "date-fns": "^2.21.1",
     "dotenv": "^8.2.0",
     "tough-cookie": "^4.0.0"
   }
