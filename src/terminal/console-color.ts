@@ -29,3 +29,8 @@ export const ConsoleColor = {
 export const color = (colorKey: keyof typeof ConsoleColor) => (str: string): string => {
   return ConsoleColor[colorKey] + str + ConsoleColor['Reset'];
 };
+
+/** example */
+((): void => {
+  console.log(color('FgYellow')('Hello Typescript!'));
+})();

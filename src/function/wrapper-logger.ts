@@ -1,6 +1,9 @@
+/**
+ * Wrap function and log start, end, on-error
+ */
 export function wrap<R, A extends any[]>(fn: (...args: A) => R, defaultName = '') {
   return (...args: A): R => {
-    const logName = fn.name ?? defaultName;
+    const logName = fn.name || defaultName;
     console.log(logName, '- start');
     /** write logic here */
     try {
@@ -35,23 +38,31 @@ export function handlePromise<P extends Promise<any>>(promise: P, logName: strin
 /**
  * Examples
  */
-const createPayload = wrap(async () => {
-  return {};
+const createPayload = wrap(() => {
+  console.log('inside of `createPayload`');
+  return { payload: 1234 };
 }, 'CREATE_PAYLOAD');
 
 const getUser = wrap(async () => {
+  console.log('inside of `getUser`');
   return {
     name: 'foo',
   };
 }, 'GET_USER');
 
+const woops = wrap(async () => {
+  console.log('inside of `woops`');
+  throw new Error('woops error message');
+}, 'GET_USER');
+
+// Run:
+// npx ts-node src/function/wrapper-logger.ts
 (async (): Promise<void> => {
   try {
-    const payload = await createPayload();
-    console.log(payload);
-    console.log(await getUser());
-    Promise.resolve(Promise.resolve(Promise.resolve('hi'))).then(x => console.log(x));
-  } catch {
-    /**  */
+    createPayload();
+    await getUser();
+    await woops();
+  } catch (e) {
+    console.log(e);
   }
 })();
