@@ -102,6 +102,7 @@ export namespace Wrapper {
  *
  * ---------------------------------------------------------- */
 export namespace LazyBinding {
+  type UpdateResult = { success: boolean };
   type TaskWith<D, R> = (dependency: D) => Promise<R>;
   type DatabaseTask<R> = TaskWith<Database, R>;
 
@@ -117,6 +118,15 @@ export namespace LazyBinding {
     };
   }
 
+  function updateUser(user: User): DatabaseTask<UpdateResult> {
+    return async db => {
+      await db.exec(`some update query ${user.toString()}`);
+      return {
+        success: true,
+      };
+    };
+  }
+
   // somewhere other file
   const db = new Database();
   async function runDatabaseTask<R>(task: DatabaseTask<R>): Promise<R> {
@@ -128,7 +138,7 @@ export namespace LazyBinding {
     void user;
   })();
 
-  /** We can concatenate task factory (or `createTask`) */
+  /** We can concatenate task factory */
   function concatTaskFactory<A, T1, T2>(
     taskFactory1: (arg: A) => DatabaseTask<T1>,
     taskFactory2: (arg: T1) => DatabaseTask<T2>
@@ -140,11 +150,7 @@ export namespace LazyBinding {
   }
 
   /** another taskFactory<I,O,D>  (I: 'input', O: 'output', D: 'dependency') */
-  const task = concatTaskFactory(getUserById, (user: User) => async (db: Database) => {
-    console.log(user);
-    return await db.exec<User>('update-query');
-  });
-  void task;
+  const task = concatTaskFactory(getUserById, user => updateUser({ ...user, name: 'foo' }));
   // task('id-1234')(db);
 }
 
