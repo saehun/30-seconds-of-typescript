@@ -31,7 +31,6 @@ client.defaults.jar = cookieJar;
   cookie.domain = 'my-domain.com';
   cookieJar.setCookieSync(cookie, 'https://my-domain.com');
   // console.log(cookieJar);
-
   const { request } = await client.post('https://subdomain.my-domain.com');
   console.log(request.headers);
   console.log(cookieJar);
