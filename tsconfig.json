@@ -4,15 +4,19 @@
     "target": "esnext",
     "noImplicitAny": true,
     "moduleResolution": "node",
+    "strictNullChecks": true,
     "sourceMap": false,
     "outDir": "dist",
     "declaration": true,
+    "skipLibCheck": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "esModuleInterop": true,
     "lib": [ "dom", "esnext" ]
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "**/*.test.ts"
   ]
 }

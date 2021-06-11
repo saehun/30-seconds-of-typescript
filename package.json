@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
-    "@types/node": "^15.0.1",
+    "@types/node": "^15.12.2",
     "@types/rewire": "^2.5.28",
     "@types/tough-cookie": "^4.0.0",
     "@types/yargs": "^16.0.1",
@@ -27,6 +27,7 @@
     "prettier": "^2.2.1",
     "rewire": "^5.0.0",
     "ts-jest": "^26.5.5",
+    "ts-morph": "^11.0.0",
     "ts-node": "^9.1.1",
     "typescript": "4.3.2"
   },
@@ -42,10 +43,9 @@
     "aws-sdk": "^2.900.0",
     "axios": "^0.21.1",
     "axios-cookiejar-support": "^1.0.1",
-    "date-fns": "^2.21.1",
-    "dotenv": "^8.2.0",
+    "date-fns": "^2.22.1",
+    "dotenv": "^10.0.0",
     "joi": "^17.4.0",
-    "tough-cookie": "^4.0.0",
-    "ts-morph": "^11.0.0"
+    "tough-cookie": "^4.0.0"
   }
 }
