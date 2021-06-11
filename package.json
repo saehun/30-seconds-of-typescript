@@ -45,6 +45,7 @@
     "date-fns": "^2.21.1",
     "dotenv": "^8.2.0",
     "joi": "^17.4.0",
-    "tough-cookie": "^4.0.0"
+    "tough-cookie": "^4.0.0",
+    "ts-morph": "^11.0.0"
   }
 }
