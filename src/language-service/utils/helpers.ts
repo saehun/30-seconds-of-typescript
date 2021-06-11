@@ -1,7 +1,8 @@
 import * as ts from 'typescript';
 
-export function printKind(node: ts.Node, comment = '') {
-  console.log(comment + kindTable[node.kind]);
+export function printKind(node: ts.Node, comment: string | number = '') {
+  const prefix = comment === undefined ? '' : `${comment}: `;
+  console.log(prefix + kindTable[node.kind]);
   return node;
 }
 
