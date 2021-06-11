@@ -44,7 +44,6 @@
     "axios": "^0.21.1",
     "axios-cookiejar-support": "^1.0.1",
     "date-fns": "^2.22.1",
-    "dotenv": "^10.0.0",
     "joi": "^17.4.0",
     "tough-cookie": "^4.0.0"
   }
