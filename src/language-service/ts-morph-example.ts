@@ -7,8 +7,12 @@ import * as ts from 'typescript';
 export function forEachFunction<T extends ts.Node>(src: SourceFile, handle: (fn: FunctionDeclaration) => T) {
   return src.transform(({ currentNode, visitChildren }) => {
     if (ts.isFunctionDeclaration(currentNode)) {
-      const fn = src.getFunction(currentNode.name.text);
-      return handle(fn);
+      if (currentNode.name) {
+        const fn = src.getFunction(currentNode.name.text);
+        if (fn != null) {
+          return handle(fn);
+        }
+      }
     }
     return visitChildren();
   });
@@ -33,7 +37,6 @@ export function forEachArrowFunction<T extends ts.Node>(
         const arrowFunction = createWrappedNode<ts.ArrowFunction>(maybeArrowFunction) as ArrowFunction;
         return handle(arrowFunction, identifier as ts.Identifier);
       }
-
       return currentNode;
     }
     return visitChildren();

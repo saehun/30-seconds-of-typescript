@@ -28,9 +28,12 @@ client.defaults.jar = cookieJar;
     .reply(200, { hello: 'world' }, { 'Set-Cookie': 'key1=value1; Path=/;' });
 
   const cookie = Cookie.parse('key=value');
+  if (cookie == null) {
+    return;
+  }
+
   cookie.domain = 'my-domain.com';
   cookieJar.setCookieSync(cookie, 'https://my-domain.com');
-  // console.log(cookieJar);
   const { request } = await client.post('https://subdomain.my-domain.com');
   console.log(request.headers);
   console.log(cookieJar);
