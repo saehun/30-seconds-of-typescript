@@ -14,6 +14,7 @@
     "lint": "eslint . --ext .js,.ts"
   },
   "devDependencies": {
+    "@types/cheerio": "^0.22.29",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.2",
     "@types/rewire": "^2.5.28",
@@ -43,6 +44,7 @@
     "aws-sdk": "^2.900.0",
     "axios": "^0.21.1",
     "axios-cookiejar-support": "^1.0.1",
+    "cheerio": "^1.0.0-rc.10",
     "date-fns": "^2.22.1",
     "joi": "^17.4.0",
     "tough-cookie": "^4.0.0"
