@@ -14,7 +14,7 @@
     "lint": "eslint . --ext .js,.ts"
   },
   "devDependencies": {
-    "@types/cheerio": "^0.22.29",
+    "@types/cheerio": "0.22.30",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.2",
     "@types/rewire": "^2.5.28",
