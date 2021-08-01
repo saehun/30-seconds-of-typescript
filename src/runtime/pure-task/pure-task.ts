@@ -1,5 +1,14 @@
-const cache = new Map();
-const pendings = new Map();
+const cache = new Map<string, any>();
+const pendings = new Map<string, any>();
+
+/**
+ * Mock fetch
+ */
+async function fetch(url: string) {
+  return {
+    text: () => JSON.stringify({ id: 0, name: 'foo', url }),
+  };
+}
 
 /**
  * Runtime
