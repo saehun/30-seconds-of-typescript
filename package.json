@@ -49,6 +49,7 @@
     "class-validator": "^0.13.1",
     "date-fns": "^2.22.1",
     "joi": "^17.4.0",
+    "node-worker-threads-pool": "^1.5.0",
     "reflect-metadata": "^0.1.13",
     "tough-cookie": "^4.0.0"
   }

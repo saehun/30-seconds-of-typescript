@@ -1,3 +1,11 @@
+import { color } from '../../terminal/console-color';
+import { isMainThread } from 'worker_threads';
+
 (() => {
-  console.log(`This is worker`);
+  // pid is same
+  if (isMainThread) {
+    console.log(color('FgCyan')(`This is main thread:`), process.pid);
+  } else {
+    console.log(color('FgGreen')(`This is worker thread:`), process.pid);
+  }
 })();

@@ -1,4 +1,5 @@
 import { Worker } from 'worker_threads';
+import './worker';
 import * as path from 'path';
 
 (() => {
