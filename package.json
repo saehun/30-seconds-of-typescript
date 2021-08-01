@@ -45,8 +45,11 @@
     "axios": "^0.21.1",
     "axios-cookiejar-support": "^1.0.1",
     "cheerio": "^1.0.0-rc.10",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
     "date-fns": "^2.22.1",
     "joi": "^17.4.0",
+    "reflect-metadata": "^0.1.13",
     "tough-cookie": "^4.0.0"
   }
 }
