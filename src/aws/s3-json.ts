@@ -6,7 +6,7 @@ export const getJson = async (req: GetObjectRequest) => {
   // ContentType assertion can automatically convert data? (TODO: expr);
   const response = await staticBucket.getObject({ ...req, ResponseContentType: 'application/json' }).promise();
   try {
-    const text = response.Body.toString('utf-8');
+    const text = response.Body!.toString('utf-8');
     return JSON.parse(text);
   } catch {
     throw new Error(`${req.Key} 올바른 JSON 파일이 아닙니다.`);

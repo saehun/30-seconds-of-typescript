@@ -7,7 +7,7 @@ function withPromise(
   child: ChildProcessByStdio<Writable | null, Readable | null, Readable | null>
 ): Promise<{
   exitCode: ChildProcess['exitCode'];
-  signal: NodeJS.Signals;
+  signal: NodeJS.Signals | null;
 }> {
   return new Promise((resolve, reject) => {
     child.on('exit', (exitCode, signal) => {

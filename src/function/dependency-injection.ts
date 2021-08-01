@@ -9,6 +9,7 @@ type User = {
   email: string;
 };
 
+// Dummy database
 class Database {
   constructor(private readonly option?: any) {}
   async connect() {
@@ -17,6 +18,8 @@ class Database {
   async exec<T>(query: string): Promise<T> {
     // dummy exec
     void query, void this.option;
+    // eslint-disable-next-line
+    // @ts-ignore
     return;
   }
 }

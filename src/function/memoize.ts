@@ -10,7 +10,7 @@ export function memoize<A extends any[], R>(
   return (...args: A): R => {
     const key = hash(...args);
     if (cache.has(key)) {
-      return cache.get(key);
+      return cache.get(key)!;
     }
     const result = fn(...args);
     cache.set(key, result);

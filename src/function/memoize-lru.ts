@@ -34,17 +34,19 @@ function set<R>(key: string, value: R, storage: MemoizeStorage<R>, size: number)
   storage.cache.set(key, value);
   if (storage.queue.length > size) {
     const key = storage.queue.shift();
-    storage.cache.delete(key);
+    if (key) {
+      storage.cache.delete(key);
+    }
   }
 }
 
 function get<R>(key: string, storage: MemoizeStorage<R>): R {
-  storage.queue = storage.queue.reduce((acc, n) => {
+  storage.queue = storage.queue.reduce((acc: string[], n) => {
     if (n !== key) {
       acc.push(n);
     }
     return acc;
   }, []);
   storage.queue.push(key);
-  return storage.cache.get(key);
+  return storage.cache.get(key)!;
 }
