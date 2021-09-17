@@ -44,7 +44,7 @@
   "dependencies": {
     "aws-sdk": "^2.900.0",
     "axios": "^0.21.1",
-    "axios-cookiejar-support": "^1.0.1",
+    "axios-cookiejar-support": "2.0.0",
     "cheerio": "^1.0.0-rc.10",
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
