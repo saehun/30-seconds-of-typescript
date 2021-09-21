@@ -55,7 +55,7 @@
     "node-notifier": "^10.0.0",
     "node-worker-threads-pool": "^1.5.0",
     "reflect-metadata": "^0.1.13",
-    "tmp": "^0.0.33",
+    "tmp": "0.2.1",
     "tough-cookie": "^4.0.0"
   },
   "engines": {
