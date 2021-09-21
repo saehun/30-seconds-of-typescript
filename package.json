@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@types/cheerio": "^0.22.29",
-    "@types/jest": "^26.0.23",
+    "@types/jest": "27.0.2",
     "@types/node": "^15.12.2",
     "@types/node-notifier": "^8.0.1",
     "@types/rewire": "^2.5.28",
