@@ -19,6 +19,7 @@
     "@types/node": "^15.12.2",
     "@types/node-notifier": "^8.0.1",
     "@types/rewire": "^2.5.28",
+    "@types/tmp": "^0.2.1",
     "@types/tough-cookie": "^4.0.0",
     "@types/yargs": "^16.0.1",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
@@ -53,6 +54,7 @@
     "node-notifier": "^10.0.0",
     "node-worker-threads-pool": "^1.5.0",
     "reflect-metadata": "^0.1.13",
+    "tmp": "^0.0.33",
     "tough-cookie": "^4.0.0"
   },
   "engines": {
