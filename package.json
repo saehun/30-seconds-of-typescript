@@ -42,6 +42,7 @@
     "typescript"
   ],
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.33.0",
     "aws-sdk": "^2.900.0",
     "axios": "^0.21.1",
     "axios-cookiejar-support": "^1.0.1",
