@@ -6,7 +6,7 @@ export function printKind(node: ts.Node, comment: string | number = '') {
   return node;
 }
 
-const kindTable = {
+const kindTable: Partial<Record<ts.SyntaxKind, string>> = {
   0: 'Unknown',
   1: 'EndOfFileToken',
   2: 'SingleLineCommentTrivia',

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import nock from 'nock';
-import axiosCookieJarSupport from 'axios-cookiejar-support';
+import { wrapper as axiosCookieJarSupport } from 'axios-cookiejar-support';
 import { CookieJar, Cookie } from 'tough-cookie';
 
 /*
