@@ -1,10 +1,11 @@
-import { createTestSuite, synclog } from './async-hook-test-utils';
+import { createTestSuite, synclog as _synclog } from './async-hook-test-utils';
 import { composeCallbacks, createLoggingCallbacks } from './async-hook-callbacks';
 import { executionAsyncId, AsyncResource, executionAsyncResource, createHook } from 'async_hooks';
 
 /**
  * executionAsyncId() returns the `asyncId` of the current execution context.
  */
+const synclog = _synclog;
 const synclogId = (prefix = '') =>
   synclog(`${prefix} asyncId => ${executionAsyncId()} asyncResource => ${executionAsyncResource()}`);
 
