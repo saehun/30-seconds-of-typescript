@@ -1,5 +1,6 @@
 import { createTestSuite, synclog as _synclog } from './async-hook-test-utils';
-import { composeCallbacks, createLoggingCallbacks } from './async-hook-callbacks';
+import { createLoggingCallbacks } from './async-hook-callbacks';
+import { composeCallbacks } from "./composeCallbacks";
 import { executionAsyncId, AsyncResource, executionAsyncResource, createHook } from 'async_hooks';
 
 /**

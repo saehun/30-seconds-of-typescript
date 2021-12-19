@@ -1,4 +1,4 @@
-import { memoizeLRU } from '../lru-memoize';
+import { memoizeLRU } from '../memoize-lru'
 
 describe('lru-memoize', () => {
   it('can memoize normal function', () => {

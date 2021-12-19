@@ -12,7 +12,7 @@
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": [ "dom", "esnext" ]
+    "lib": ["esnext"]
   },
   "include": [
     "src/**/*"

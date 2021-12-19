@@ -83,6 +83,7 @@ const colors: Array<keyof typeof chalk> = [
   'blue',
   'magenta',
 ];
+
 function colorize(id: number): string {
   return (chalk as any)[colors[id % colors.length]](id);
 }
