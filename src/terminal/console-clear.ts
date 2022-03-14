@@ -15,6 +15,15 @@ export function clear(linesToClear: number) {
   }
 }
 
+/**
+ * Clear line code from Jest
+ */
+export function clearLineJest(stream: NodeJS.WriteStream): void {
+  if (stream.isTTY) {
+    stream.write('\x1b[999D\x1b[K');
+  }
+}
+
 // helper
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -43,7 +52,17 @@ export async function example_clearConsoleLog() {
   resumeStdin();
 }
 
+export async function example_clearConsoleLog2() {
+  process.stdout.write('Hello');
+  await sleep(1000);
+  clearLineJest(process.stdout);
+  process.stdout.write('World!');
+  await sleep(1000);
+  clearLineJest(process.stdout);
+}
+
 /**
  * run test
  */
-example_clearConsoleLog();
+// example_clearConsoleLog();
+example_clearConsoleLog2();
