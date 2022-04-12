@@ -12,6 +12,7 @@ dist
 
 # Ignore yarn
 yarn.lock
+package-lock.json
 
 # Ignore yarn error log
 yarn-error.log

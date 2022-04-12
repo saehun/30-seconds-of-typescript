@@ -14,7 +14,6 @@
     "lint": "eslint . --ext .js,.ts"
   },
   "devDependencies": {
-    "@types/chalk": "^2.2.0",
     "@types/cheerio": "^0.22.30",
     "@types/debug": "^4.1.7",
     "@types/fs-extra": "^9.0.13",
