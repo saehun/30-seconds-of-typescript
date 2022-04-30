@@ -3,9 +3,7 @@ import { spawn, ChildProcess, ChildProcessByStdio } from 'child_process';
 
 const EDITOR_COMMAND = process.env.EDITOR ?? 'vim';
 
-function withPromise(
-  child: ChildProcessByStdio<Writable | null, Readable | null, Readable | null>
-): Promise<{
+function withPromise(child: ChildProcessByStdio<Writable | null, Readable | null, Readable | null>): Promise<{
   exitCode: ChildProcess['exitCode'];
   signal: NodeJS.Signals | null;
 }> {

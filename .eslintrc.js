@@ -24,6 +24,7 @@ module.exports = {
     indent: 0,
     quotes: 0,
     'no-inner-declarations': 0,
+    '@typescript-eslint/ban-types': 0,
     '@typescript-eslint/camelcase': 0,
     '@typescript-eslint/no-namespace': 0,
     '@typescript-eslint/no-var-requires': 0, // allow require
