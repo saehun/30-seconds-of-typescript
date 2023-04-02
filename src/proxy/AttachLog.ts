@@ -56,14 +56,8 @@ export function AttachLog<T extends object>(obj: T): T {
   });
 }
 
-// primitive number, boolean, string, symbol, bigint, null, undefined
-// 빼고는 나머지는 다 객체잖아.
-
-User.name; // 선진
-Reflect.get(User, 'name');
-
-class UserManager {
-  constructor(private readonly users: User[]) {
-    console.log('UserManagerCreated');
+(() => {
+  for (const elem of AttachLog([1, 2, 3, 4])) {
+    console.log(elem);
   }
-}
+})();
