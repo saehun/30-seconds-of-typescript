@@ -57,7 +57,12 @@ export function AttachLog<T extends object>(obj: T): T {
 }
 
 (() => {
-  for (const elem of AttachLog([1, 2, 3, 4])) {
-    console.log(elem);
-  }
+  const error: any = AttachLog(new Error('foo'));
+  console.log({
+    primitive: error[Symbol.toPrimitive],
+    toString: error.toString(),
+    name: error.name,
+    message: error.message,
+  });
+  // const wrappedError = new Error(error as any);
 })();
