@@ -23,7 +23,7 @@ specifiers:
   cheerio: ^1.0.0-rc.10
   class-transformer: ^0.4.0
   class-validator: ^0.13.1
-  cli-cursor: ^3
+  cli-cursor: ^4.0.0
   debug: ^4.3.3
   denque: ^2.0.1
   eslint: ^7.32.0
@@ -58,7 +58,7 @@ dependencies:
   cheerio: 1.0.0-rc.10
   class-transformer: 0.4.0
   class-validator: 0.13.2
-  cli-cursor: 3.1.0
+  cli-cursor: 4.0.0
   debug: 4.3.4
   denque: 2.0.1
   execa: 5.1.1
@@ -2460,11 +2460,11 @@ packages:
       validator: 13.7.0
     dev: false
 
-  /cli-cursor/3.1.0:
-    resolution: {integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==}
-    engines: {node: '>=8'}
+  /cli-cursor/4.0.0:
+    resolution: {integrity: sha512-VGtlMu3x/4DOtIUwEkRezxUZ2lBacNJCHash0N0WeZDBS+7Ux1dm3XWAgWYxLJFMMdOeXMHXorshEFhbMSGelg==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
-      restore-cursor: 3.1.0
+      restore-cursor: 4.0.0
     dev: false
 
   /cliui/7.0.4:
@@ -4796,9 +4796,9 @@ packages:
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
 
-  /restore-cursor/3.1.0:
-    resolution: {integrity: sha512-l+sSefzHpj5qimhFSE5a8nufZYAM3sBSVMAPtYkmC+4EH2anSGaEMXSD0izRQbu9nfyQ9y5JrVmp7E8oZrUjvA==}
-    engines: {node: '>=8'}
+  /restore-cursor/4.0.0:
+    resolution: {integrity: sha512-I9fPXU9geO9bHOt9pHHOhOkYerIMsmVaWB0rA2AI9ERh/+x/i7MV5HKBNrg+ljO5eoPVgCcnFuRjJ9uH6I/3eg==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       onetime: 5.1.2
       signal-exit: 3.0.7
