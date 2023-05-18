@@ -1,5 +1,4 @@
-import { FunctionDeclaration } from 'ts-morph';
-import * as ts from 'typescript';
+import { ts, FunctionDeclaration } from 'ts-morph';
 
 /**
  * Transform function declaration to arrow function.

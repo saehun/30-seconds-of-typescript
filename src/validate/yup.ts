@@ -25,11 +25,3 @@ function parseJsonAndValidate<T>(text: string, validate: (value: unknown) => ass
   validate(json);
   return json;
 }
-
-function parseAndValidateJsonWith(schema) {
-  return (text: string) => {
-    return value;
-  };
-}
-
-pipe(tryParseJson, validateJsonWith(personSchema));

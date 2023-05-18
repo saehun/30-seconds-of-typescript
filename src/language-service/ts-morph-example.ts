@@ -1,5 +1,4 @@
-import { ArrowFunction, createWrappedNode, FunctionDeclaration, SourceFile } from 'ts-morph';
-import * as ts from 'typescript';
+import { ts, ArrowFunction, createWrappedNode, FunctionDeclaration, SourceFile } from 'ts-morph';
 
 /**
  * Traverse source code and execute callback when meet function declaration

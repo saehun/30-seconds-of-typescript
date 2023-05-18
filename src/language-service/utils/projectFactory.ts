@@ -1,5 +1,4 @@
-import { IndentationText, NewLineKind, Project, QuoteKind } from 'ts-morph';
-import * as ts from 'typescript';
+import { ts, IndentationText, NewLineKind, Project, QuoteKind } from 'ts-morph';
 
 export function createBasicProject() {
   return new Project({

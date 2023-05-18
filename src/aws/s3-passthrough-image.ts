@@ -1,4 +1,6 @@
-import { S3 } from 'aws-sdk';
+// import { S3 } from 'aws-sdk';
+declare const S3: any;
+
 import axios, { AxiosResponse } from 'axios';
 import { Stream, PassThrough } from 'stream';
 
@@ -15,7 +17,8 @@ const uploadFromStream = (
   fileResponse: AxiosResponse,
   fileName: string,
   bucket: string
-): { passThrough: PassThrough; promise: Promise<S3.ManagedUpload.SendData> } => {
+  // ): { passThrough: PassThrough; promise: Promise<S3.ManagedUpload.SendData> } => {
+): { passThrough: PassThrough; promise: Promise<any> } => {
   const passThrough = new PassThrough();
   const promise = staticBucket
     .upload({

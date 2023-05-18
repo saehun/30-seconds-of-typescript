@@ -1,6 +1,6 @@
 import * as tmp from 'tmp';
 import * as fs from 'fs';
-import execa = require('execa');
+import execa from 'execa';
 const JSON5 = require('json5');
 
 export async function vimPrompt(data: any = {}): Promise<any> {
