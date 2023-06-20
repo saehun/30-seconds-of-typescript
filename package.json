@@ -56,7 +56,7 @@
     "cheerio": "^1.0.0-rc.10",
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
-    "cli-cursor": "^3",
+    "cli-cursor": "^4.0.0",
     "debug": "^4.3.3",
     "denque": "^2.0.1",
     "execa": "^5",
