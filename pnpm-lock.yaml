@@ -19,7 +19,7 @@ specifiers:
   '@typescript/analyze-trace': ^0.10.0
   axios: ^0.21.4
   axios-cookiejar-support: ^2.0.0
-  chalk: ^4.0.0
+  chalk: ^5.0.0
   cheerio: ^1.0.0-rc.10
   class-transformer: ^0.4.0
   class-validator: ^0.13.1
@@ -54,7 +54,7 @@ dependencies:
   '@nestjs/core': 9.4.1_7z4srzrqxysrmxfsiudmc4ihf4
   axios: 0.21.4_debug@4.3.4
   axios-cookiejar-support: 2.0.4_hrsozkhdc6shn4v7qkt54uth4e
-  chalk: 4.1.2
+  chalk: 5.6.2
   cheerio: 1.0.0-rc.10
   class-transformer: 0.4.0
   class-validator: 0.13.2
@@ -2412,6 +2412,11 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  /chalk/5.6.2:
+    resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: false
 
   /char-regex/1.0.2:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
