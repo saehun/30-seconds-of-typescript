@@ -83,7 +83,7 @@ devDependencies:
   '@types/rewire': 2.5.28
   '@types/tmp': 0.2.3
   '@types/tough-cookie': 4.0.1
-  '@types/yargs': 17.0.10
+  '@types/yargs': 17.0.35
   '@typescript-eslint/eslint-plugin': 4.33.0_s2qqtxhzmb7vugvfoyripfgp7i
   '@typescript-eslint/parser': 4.33.0_jofidmxrjzhj7l6vknpw5ecvfe
   '@typescript/analyze-trace': 0.10.0
@@ -1578,7 +1578,7 @@ packages:
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
       '@types/node': 18.7.22
-      '@types/yargs': 16.0.4
+      '@types/yargs': 16.0.11
       chalk: 4.1.2
     dev: true
 
@@ -1893,20 +1893,20 @@ packages:
     resolution: {integrity: sha512-Y0K95ThC3esLEYD6ZuqNek29lNX2EM1qxV8y2FTLUB0ff5wWrk7az+mLrnNFUnaXcgKye22+sFBRXOgpPILZNg==}
     dev: true
 
-  /@types/yargs-parser/21.0.0:
-    resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
+  /@types/yargs-parser/21.0.3:
+    resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
     dev: true
 
-  /@types/yargs/16.0.4:
-    resolution: {integrity: sha512-T8Yc9wt/5LbJyCaLiHPReJa0kApcIgJ7Bn735GjItUfh08Z1pJvu8QZqb9s+mMvKV6WUQRV7K2R46YbjMXTTJw==}
+  /@types/yargs/16.0.11:
+    resolution: {integrity: sha512-sbtvk8wDN+JvEdabmZExoW/HNr1cB7D/j4LT08rMiuikfA7m/JNJg7ATQcgzs34zHnoScDkY0ZRSl29Fkmk36g==}
     dependencies:
-      '@types/yargs-parser': 21.0.0
+      '@types/yargs-parser': 21.0.3
     dev: true
 
-  /@types/yargs/17.0.10:
-    resolution: {integrity: sha512-gmEaFwpj/7f/ROdtIlci1R1VYU1J4j95m8T+Tj3iBgiBFKg1foE/PSl93bBd5T9LDXNPo8UlNN6W0qwD8O5OaA==}
+  /@types/yargs/17.0.35:
+    resolution: {integrity: sha512-qUHkeCyQFxMXg79wQfTtfndEC+N9ZZg76HJftDJp+qH2tV7Gj4OJi7l+PiWwJ+pWtW8GwSmqsDj/oymhrTWXjg==}
     dependencies:
-      '@types/yargs-parser': 21.0.0
+      '@types/yargs-parser': 21.0.3
     dev: true
 
   /@typescript-eslint/eslint-plugin/4.33.0_s2qqtxhzmb7vugvfoyripfgp7i:
@@ -3141,8 +3141,8 @@ packages:
   /fs.realpath/1.0.0:
     resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
 
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents/2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -3717,7 +3717,7 @@ packages:
       micromatch: 4.0.5
       walker: 1.0.8
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /jest-jasmine2/27.5.1:
