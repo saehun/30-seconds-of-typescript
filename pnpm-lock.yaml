@@ -22,7 +22,7 @@ specifiers:
   chalk: ^4.0.0
   cheerio: ^1.0.0-rc.10
   class-transformer: ^0.4.0
-  class-validator: ^0.13.1
+  class-validator: ^0.15.0
   cli-cursor: ^3
   debug: ^4.3.3
   denque: ^2.0.1
@@ -50,14 +50,14 @@ specifiers:
 
 dependencies:
   '@aws-sdk/client-s3': 3.67.0
-  '@nestjs/common': 9.4.1_um5yyjpwkyxikchdommcqtg4bu
+  '@nestjs/common': 9.4.1_cztwgjv7vjxxxjsqt27cgr3jgq
   '@nestjs/core': 9.4.1_7z4srzrqxysrmxfsiudmc4ihf4
   axios: 0.21.4_debug@4.3.4
   axios-cookiejar-support: 2.0.4_hrsozkhdc6shn4v7qkt54uth4e
   chalk: 4.1.2
   cheerio: 1.0.0-rc.10
   class-transformer: 0.4.0
-  class-validator: 0.13.2
+  class-validator: 0.15.1
   cli-cursor: 3.1.0
   debug: 4.3.4
   denque: 2.0.1
@@ -1603,7 +1603,7 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /@nestjs/common/9.4.1_um5yyjpwkyxikchdommcqtg4bu:
+  /@nestjs/common/9.4.1_cztwgjv7vjxxxjsqt27cgr3jgq:
     resolution: {integrity: sha512-VA5XXLAvXG3vY4GqvvuevL7Ooi5RRsov+ydMlgc1rPswgxkSVWaPTqNibsP4C6y5XJtKfc4Ol+zoe2w/LeYJTQ==}
     peerDependencies:
       cache-manager: <=5
@@ -1620,7 +1620,7 @@ packages:
         optional: true
     dependencies:
       class-transformer: 0.4.0
-      class-validator: 0.13.2
+      class-validator: 0.15.1
       iterare: 1.2.1
       reflect-metadata: 0.1.13
       rxjs: 7.5.5
@@ -1646,7 +1646,7 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 9.4.1_um5yyjpwkyxikchdommcqtg4bu
+      '@nestjs/common': 9.4.1_cztwgjv7vjxxxjsqt27cgr3jgq
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -1892,6 +1892,10 @@ packages:
   /@types/tough-cookie/4.0.1:
     resolution: {integrity: sha512-Y0K95ThC3esLEYD6ZuqNek29lNX2EM1qxV8y2FTLUB0ff5wWrk7az+mLrnNFUnaXcgKye22+sFBRXOgpPILZNg==}
     dev: true
+
+  /@types/validator/13.15.10:
+    resolution: {integrity: sha512-T8L6i7wCuyoK8A/ZeLYt1+q0ty3Zb9+qbSSvrIVitzT3YjZqkTZ40IbRsPanlB4h1QB3JVL1SYCdR6ngtFYcuA==}
+    dev: false
 
   /@types/yargs-parser/21.0.0:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
@@ -2453,11 +2457,12 @@ packages:
     resolution: {integrity: sha512-ETWD/H2TbWbKEi7m9N4Km5+cw1hNcqJSxlSYhsLsNjQzWWiZIYA1zafxpK9PwVfaZ6AqR5rrjPVUBGESm5tQUA==}
     dev: false
 
-  /class-validator/0.13.2:
-    resolution: {integrity: sha512-yBUcQy07FPlGzUjoLuUfIOXzgynnQPPruyK1Ge2B74k9ROwnle1E+NxLWnUv5OLU8hA/qL5leAE9XnXq3byaBw==}
+  /class-validator/0.15.1:
+    resolution: {integrity: sha512-LqoS80HBBSCVhz/3KloUly0ovokxpdOLR++Al3J3+dHXWt9sTKlKd4eYtoxhxyUjoe5+UcIM+5k9MIxyBWnRTw==}
     dependencies:
-      libphonenumber-js: 1.9.51
-      validator: 13.7.0
+      '@types/validator': 13.15.10
+      libphonenumber-js: 1.13.12
+      validator: 13.15.35
     dev: false
 
   /cli-cursor/3.1.0:
@@ -4146,8 +4151,8 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /libphonenumber-js/1.9.51:
-    resolution: {integrity: sha512-MGidRDs7s2nUybwrB/UjZT4nPXZPYQZQTu/sF3/O2v/DocmD8N6G+a9kwDt2qm7DaOo35XRt7hAIbYL+ml942Q==}
+  /libphonenumber-js/1.13.12:
+    resolution: {integrity: sha512-uLVeV1c9OTk6qkdqnj+mpMD+ZdnZ0szVyWu58HwMmpwkHA1gCEkyjd3veZQXDnuw9KEwSRjcc9B1pS9XKIN1fA==}
     dev: false
 
   /light-my-request/5.9.1:
@@ -5432,8 +5437,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /validator/13.7.0:
-    resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
+  /validator/13.15.35:
+    resolution: {integrity: sha512-TQ5pAGhd5whStmqWvYF4OjQROlmv9SMFVt37qoCBdqRffuuklWYQlCNnEs2ZaIBD1kZRNnikiZOS1eqgkar0iw==}
     engines: {node: '>= 0.10'}
     dev: false
 
